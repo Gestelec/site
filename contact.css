@@ -1,0 +1,306 @@
+body{
+	background-color:#0d130f ;
+	
+	
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body {
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif ;
+	background-size: cover;
+	background-position: cover;
+}
+
+
+/*header*/
+
+
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+}
+
+header{
+	position: relative;
+	padding: 0 2rem;
+	background-color: transparent;
+}
+
+.navbar {
+	width: 100%;
+	height: 60px;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+  z-index: 5;
+	position: absolute;
+	justify-content: space-between;
+}
+
+.navbar .logo img{
+    height: 1.5rem;
+
+}
+
+.navbar .links {
+	display: flex;
+	gap: 2rem;
+	cursor: pointer;
+	z-index: 2;
+
+}
+
+
+
+
+.navbar .toggle_bnt img,.toggle_bnt{
+	width: 2rem;
+	height: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+
+.toggle_bnt,.toggle_bnt img{
+	z-index: 5;
+}
+
+
+/*DROPDOWN MENU*/
+
+
+.dropdown_menu.open {
+	height: 170px;
+}
+
+.dropdown_menu li{
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/*top of the web site*/
+
+.top img{
+	width: 100vw;
+	height: 100vh;
+    overflow: hidden;
+}
+
+.top{
+	width: 100vw;
+	height: max-content;
+	overflow: hidden;
+}
+
+.top-txt{
+	color: #fff;
+	position: absolute;
+	top: 20vh;
+	width: 50vw;
+	left: 5vw;
+	font-size: 30px;
+}
+
+/*the midel of the web-site*/
+
+.midel{
+	width: 100vw;
+	height: max-content;
+	color: #fff;
+	position: relative;
+	top: 15vh;
+}
+
+.card{
+	width: 290px;
+	
+	height: 250px;
+	border-right: solid #00e07d 5px;
+	border-bottom: solid #00e07d 5px;
+	position: relative;
+    
+}
+
+.card-box{
+	display: flex;
+	justify-content: center;
+	gap:2rem ;
+	flex-wrap: wrap;
+	width: 100vw;
+	 height: max-content;
+	top: 15vh;
+	position: relative;
+	/*background-color: #060f0b;*/
+}
+
+.card1{
+	width: 290px;
+	
+	height: 250px;
+	border-right: solid #00e07d 5px;
+	border-bottom: solid #00e07d 5px;
+	position: relative;
+    t
+}
+
+.card1 p {
+    position: relative;
+    width: 260px;
+    left: 15px;
+    justify-content:center ;
+    top: 30px;
+    line-height: 25px;
+    
+}
+
+.card p {
+    position: relative;
+    width: 260px;
+    left: 15px;
+    justify-content:center ;
+    top: 30px;
+    line-height: 25px;
+    
+}
+
+/*the end of the web site*/
+.end{
+	width: 100vw;
+	height: max-content;
+    /*background-color: #060f0b;*/
+    top: 35vh;
+    height: 300px;
+}
+
+.end{
+	position: relative;
+	color: #fff;
+}
+
+.end h1,.end p{
+	position: relative;
+	font-size: 30px;
+}
+
+.dropdown_menu{
+	display:none ;
+}
+
+
+/*RESPONSIVE DESIGN OF THE HEADER*/
+@media (max-width: 1100px){
+
+  /*drop down menu*/
+  .dropdown_menu {
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	width: 300px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	overflow: hidden;
+	border-radius: 10px;
+	height: 0;
+	display: none;
+}
+  
+
+  .navbar{
+     width: 90vw;
+     left: 0px;
+     position: fixed;
+    
+     z-index: 10;
+  }
+
+  .dropdown_menu{
+  	right: 10px;
+  }
+
+  .logo1{
+  	left: 25%;
+  }
+
+  .navbar .links{
+  	display: none;
+  }
+
+  .navbar .toggle_bnt img,.toggle_bnt {
+  	z-index: 5;
+  	display: block;
+  	
+  }
+
+  .navbar{
+  	max-width: 90%;
+  	position: fixed;
+  	right: 2vh;
+  	z-index: 1;
+  }
+
+  .logo1 h1{
+  	left: -20%;
+  }
+
+  .logo1{
+  	left: -10%;
+  }
+
+  .dropdown_menu{
+  	display: block;
+  	z-index: 1;
+  	position: fixed;
+  }
+
+
+.top-txt{
+	width: 90vw;
+	left: 5vw;
+	top: 5vw;
+}
+
+}
+
+@media (max-width:500px){
+.dropdown_menu{
+  	width: 98vw;
+    left: 1vw;
+  }
+
+  .top-txt h1{
+  	font-size: 20vw;
+  }
+
+  .top-txt p{
+  	font-size: 6vw;
+  }
+
+  .midel p{
+  	font-size: 6vw;
+  }
+
+  .midel{
+  	top: 60vh;
+  }
+
+  .end{
+  	top: 100vh;
+  }
+}

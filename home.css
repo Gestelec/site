@@ -1,0 +1,312 @@
+body{
+	background-color:#0d130f ;
+	
+	
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body {
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif ;
+	background-size: cover;
+	background-position: cover;
+}
+
+
+/*header*/
+
+
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+}
+
+header{
+	position: relative;
+	padding: 0 2rem;
+	background-color: transparent;
+}
+
+.navbar {
+	width: 100%;
+	height: 60px;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+  z-index: 5;
+	position: absolute;
+	justify-content: space-between;
+}
+
+.navbar .logo img{
+    height: 1.5rem;
+
+}
+
+.navbar .links {
+	display: flex;
+	gap: 2rem;
+	cursor: pointer;
+	z-index: 12;
+
+}
+
+
+
+.navbar .toggle_bnt img,.toggle_bnt{
+	width: 2rem;
+	height: 1.5rem;
+	cursor: pointer;
+	display: none;
+	z-index: 13;
+}
+
+
+/*DROPDOWN MENU*/
+.dropdown_menu {
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	width: 300px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	overflow: hidden;
+	border-radius: 10px;
+	height: 0;
+	display: none;
+}
+
+.dropdown_menu.open {
+	height: 170px;
+}
+
+.dropdown_menu li{
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+/*the top of the web sits*/
+
+.top {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.bgimges{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.bgimges img{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+
+/*logo of top*/
+
+
+
+.top-logo{
+	
+	position: absolute;
+	z-index: 1;
+	display: flex;
+	top: 10px;
+	
+}
+
+.h1-box,.top-logo img {
+    font-size:60px ;
+    color: #fff;
+    font-weight: bold;
+    left: 15vw;
+    position:absolute;
+    z-index: 1;
+    
+}
+
+.top-logo h1{
+	left:310px;
+	top: 40px;
+	position:relative ;
+	animation-name:logo-animationh1;
+	animation-duration: 2.5s;
+
+}
+
+.top-logo img{
+	width:500px;
+	animation-name:logo-animationg;
+	animation-duration: 2.5s;
+}
+
+.h1-box{
+	
+	top: -30px;
+}
+
+/*logo animation*/
+
+@keyframes logo-animationg{
+	from {top: 70vh}
+	to {top: 0vh}
+}
+
+@keyframes logo-animationh1{
+	from {top: 70vh}
+	to {top: 40px}
+}
+
+/*top slogon*/
+
+.slogon{
+	display: flex;
+	margin: auto 22vh ;
+	position: absolute;
+	font-size:40px ;
+	color: #fff;
+	top: 120px;
+	left: 0vw;
+	top: ;
+	animation-name:slogon-animationg;
+	animation-duration: 2.5s;
+
+}
+
+/*slogon animation*/
+
+@keyframes slogon-animationg{
+	from {top: 70vh}
+	to {top: 19vh}
+}
+
+/*text on the top*/
+
+.top-txt {
+	color: #fff;
+}
+
+.top-txt p,.top-txt h1{
+	z-index: 3;
+	position: relative;
+	left: 10px;
+}
+
+.top-txt img{
+	float: right;
+	width: 100vw;
+	height: 100vh;
+	z-index: 4;
+	position: relative;
+  shape-outside: polygon(6px 387px, 13.82% 62.74%, 22.78% 67.54%, 46.27% 78.1%, 43.42% 95.91%, 0.06% 1.36%);
+}
+
+
+
+@media (max-width: 1100px){
+.header{
+	position: fixed;
+} 
+
+.sloguan2{
+	left: 4px;
+	letter-spacing: -2px;
+}
+
+
+  .logo1{
+  	left: 25%;
+  }
+
+  .navbar .links{
+  	display: none;
+  }
+
+ 
+
+ .navbar .toggle_bnt img,.toggle_bnt {
+  	z-index: 5;
+  	display: block;
+  	
+  }
+
+
+  .navbar{
+  	max-width: 90%;
+  	position: fixed;
+  	right: 2vh;
+  	z-index: 1;
+  }
+
+  .logo1 h1{
+  	left: -20%;
+  }
+
+  .logo1{
+  	left: -10%;
+  }
+
+  .dropdown_menu{
+  	display: block;
+  	z-index: 1;
+  	position: fixed;
+  }
+
+  /*midel of the web sit*/
+
+  .midel{
+  	overflow: hidden;
+  }
+
+  .midel p{
+  	width: 90vw;
+	font-size:20px ;
+    left: 5vw;
+    overflow: hidden;
+    top: 70px;
+  }
+
+  .midel h1{
+  	width: 95vw;
+  	left: 2.5vw;
+  }
+
+  .midel img{
+  	width: 150vw;
+  	left: -37.5vw;
+  }
+
+  /*top logo and slogon of the web site*/
+
+  .slogon{
+  	width: 90vw;
+  	margin: auto 0;
+  	font-size: 30px;
+  }
+
+
+}

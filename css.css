@@ -1,0 +1,662 @@
+/*replace the test*/
+body{
+	background-color:#0d130f ;
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body {
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif ;
+	background-size: cover;
+	background-position: cover;
+	
+}
+/*the backgraound paralax*/
+
+*{
+	margin: 0;
+}
+
+.body{
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	
+}
+
+.paralax{
+	display: grid;
+	grid-template-areas: "stack" ;
+	min-height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+  margin: 0;
+  z-index: 3;
+  top: -50px;
+  
+}
+
+.bimg img{
+	width: 150vw;
+	height: 100vh;
+
+}
+
+
+/*.paralax > *{
+	grid-area: stack;
+}*/
+
+
+@-webkit-keyframes spin{
+	100%{-webkit-transform: rotate(360deg);}
+}
+
+@-moz-keyframes spin{
+	100%{-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin{
+	100%{-webkit-transform: rotate(360deg); }
+}
+
+.logo1 h1{
+	font-weight: bold;
+	font-family: 'Rubik',sans-serif;
+	/*position: absolute;*/
+	justify-content: center;
+  max-width: fit-content;
+	/*animation-name:logo-animation;
+	animation-duration: 2.5s;*/
+  color: #fff;
+  font-size: 85px;
+  letter-spacing: 10px;
+  font-weight: bold;
+  
+  position: relative;
+}
+
+.logo1{
+	justify-content: center;
+	
+
+}
+
+/*sologon css*/
+.sea-the-life-in-green-box{
+	top: 20vh;
+	z-index: 2;
+	border-radius: 15px;
+	text-align: center;
+	
+	min-height: fit-content;
+	background-color: rgba(0, 224, 125, 0.1);
+	backdrop-filter: blur(15px);
+	position: absolute;
+	align-content: center;
+  
+  /*position: relative;*/
+	animation-name:slogon-animation;
+	animation-duration: 2.5s;
+	
+  font-size: 25px;
+}
+
+.sloguan1 {
+  color: #fff;
+
+}
+
+.sloguan2 {
+	color:#00e07d ;
+	top: -10px;
+	font-size: 65px;
+	
+	position: relative;
+}
+
+@keyframes slogon-animation{
+	from {top: -100vh}
+	to {top: 20vh}
+}
+
+.G{
+	
+	height: 105px;
+  	/*position: absolute;*/
+	left: ;
+    top: 20vh;
+	/*animation-name:logo-animation;
+	animation-duration: 2.5s;*/
+}
+
+.logo1{
+	top: 10px;
+	position: absolute;
+	align-items: center;
+	justify-content: center;
+	
+  width: 100vw;
+  overflow: hidden;
+  /*position: relative;*/
+	animation-name:logo-animation;
+	animation-duration: 2.5s;
+	display: flex;
+	
+}
+
+@keyframes logo-animation{
+	from {top:70vh }
+	to {top:10px }
+}
+
+
+/*position of the slogon*/
+.sea-the-life-in-green-position{
+	width: 100vw;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	display: flex;
+}
+
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+}
+
+/*header*/
+
+header{
+	position: relative;
+	padding: 0 2rem;
+	background-color: transparent;
+}
+
+.navbar {
+	width: 100%;
+	height: 60px;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+  z-index: 5;
+	position: absolute;
+	justify-content: space-between;
+}
+
+.navbar .logo img{
+    height: 1.5rem;
+
+}
+
+.navbar .links {
+	display: flex;
+	gap: 2rem;
+	cursor: pointer;
+	z-index: 2;
+
+}
+
+.float-left {
+  
+  shape-outside: polygon(10px 9px, 77.99% 74.29%, 50.02% 85.62%, 22.51% 71.23%, 14.80% 57.46%, 0.57% 61.3%);
+  margin: 0px;
+  width: 100vw;
+        
+ height: 100vh;
+}
+
+
+.navbar .toggle_bnt img,.toggle_bnt{
+	width: 2rem;
+	height: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+
+.navbar .toggle_bnt img,.toggle_bnt {
+  	z-index: 5;
+  	display: block;
+  	
+  }
+
+  .toggle_bnt {
+    z-index: 5;
+    display: block;
+  }
+
+  .toggle_bnt {
+  width: 2rem;
+  height: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/*DROPDOWN MENU*/
+
+
+.dropdown_menu.open {
+	height: 170px;
+}
+
+.dropdown_menu li{
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*header pargraphe*/
+
+ .float-left {
+  
+  shape-outside: polygon(10px 9px, 77.99% 74.29%, 50.02% 85.62%, 22.51% 71.23%, 14.80% 57.46%, 0.57% 61.3%);
+  margin: 0px;
+  width: 100vw;
+        
+ height: 100vh;
+}
+
+textbg p{
+	z-index:6;
+	position: relative;
+	color: #fff;
+	left: 10px;
+}
+
+
+
+textbg h1{
+	z-index: 6;
+	position: relative;
+	color: #fff;
+	left: 10px;
+}
+
+
+/*solar panel*/
+
+.sp p{
+	width: 40vw;
+	top: 15vh;
+	position: absolute;
+	left: 20px;
+	color: #fff;
+	
+	
+	color: #fff;
+}
+
+.sp {
+	
+	
+	color: #fff;
+	position: relative;
+	text-align: center;
+	
+
+}
+
+.sp img{
+	height: 100vh;
+	width: 100vw;
+}
+
+.sp h1{
+	width: 40vw;
+	top: 0vh;
+	position: absolute;
+	
+	color: #fff;
+
+	font-family: 'Roboto',sans-serif ;
+}
+
+.float-rigth{
+	
+	shape-outside: polygon(10px 9px, 77.99% 74.29%, 50.02% 85.62%, 22.51% 71.23%, 14.80% 57.46%, 0.57% 61.3%);
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*logo of associete*/
+.ologo{
+	width: 100vw;
+	height: 50vh;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+
+}
+
+/*our partners h1*/
+
+.our-partners{
+	font-weight: bold;
+	font-size: 25px;
+	color: #fff;
+	top: 35px;
+	text-align: center;
+}
+
+.our-partners h1{
+	font-family: 'Roboto',sans-serif ;
+}
+/*the real end */
+.rend{
+	width: 100vw;
+	height: 50vh;
+	background-color: #16402c;
+}
+
+.top-of-the-website{
+ 	overflow: hidden;
+ 	width: 100vw;
+ 	height: 100vh;
+ }
+
+/*web sit base sitting*/ 
+
+	.bimg{
+ 	width: 100vw;
+ 	height: 100vh;
+ 	overflow: hidden;
+ }
+
+ .textbg p{
+	
+	position: relative;
+	color: #fff;
+	
+}
+
+.textbg{
+	width: 100vw;
+	overflow: hidden;
+}
+
+.rfloat-rigth {
+	float: right;
+	height: 100vh;
+	z-index: 1;
+  top: 0px;
+	position: absolute;
+  shape-outside: polygon(27px 341px, 16.24% 66.76%, 26.02% 74.60%, 40.63% 95.14%, 41.41% 100.89%, 0.06% 1.36%);
+}
+
+
+.textbg h1{
+	
+	position: relative;
+	color: #fff;
+	
+}
+/*the wind turbine*/
+ t1{
+	position: absolute;
+	margin: auto auto;
+	width: 25vw;
+	left: 37.5vw;
+	height: 70vh;
+	bottom: 100px;
+	z-index: 4;
+}
+
+.t1{
+	posi
+}
+
+.turbine{
+	position: absolute;
+	display: grid;
+	left: 40vw;
+	bottom: 0px;
+  height: 80vh;
+  width: 100vw;
+  overflow: hidden;
+	
+	grid-template-areas: "stack";
+}
+
+.turbine img{
+	height: 80vh;
+	left: -137px;
+	top: 20vh;
+
+	 
+}
+
+.aille{
+	-webkit-animation: spin 10s linear infinite;
+	-moz-animation: spin 10s linear infinite;
+	animation: spin 10s linear infinite;
+}
+
+.turbine > *{
+	grid-area: stack;
+}
+
+aille{
+	width: 	26vw;
+	left: 37vw;
+
+	bottom: 18vh;
+	position: absolute;
+	
+	-webkit-animation: spin 10s linear infinite;
+	-moz-animation: spin 10s linear infinite;
+	animation: spin 10s linear infinite;
+	
+	z-index: 4;
+}
+
+.float-left{
+	position: relative;width: 100vw;height: 100vh;overflow: hidden;
+}
+
+/*space plus porth top paragraphe*/
+.space-plus-black{
+	width: 100vw;
+	height: 10vh;
+	background-color: transparent;
+	z-index: 2;
+	position: relative;
+	top: 0px;
+}
+
+.space-plus-green{
+	width: 100vw;
+	height: 10vh;
+	background-color: #1b3f2e;
+	z-index: 2;
+	position: relative;
+	
+	top: 0px;
+}
+
+/*sp css*/
+
+.sp img{
+	background-color: #0d130f;
+	 height: 100vh;
+ width: 100vw; 
+} 
+
+
+/*drop dow menu*/
+.dropdown_menu{
+	display: none;
+}
+
+/*RESPONSIVE DESIGN OF THE HEADER*/
+@media (max-width: 1100px) {
+  
+
+  /*dropdow menu*/
+  .dropdown_menu {
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	width: 300px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	overflow: hidden;
+	border-radius: 10px;
+	height: 0;
+	display: none;
+}
+
+  .navbar {
+  	position: absolute;
+  }
+
+  /*slogon responsive*/
+  .sea-the-life-in-green-box{
+  	max-width: fit-content;
+  	
+  }
+
+  .navbar .links{
+  	display: none;
+  }
+
+  .navbar .toggle_bnt img,.toggle_bnt {
+  	z-index: 5;
+  	display: block;
+  	
+  }
+  
+
+  .bimg,.float-left{
+  	width: 150vw;
+  	overflow: hidden;
+  	left:-25vw;
+  	position: relative;
+  	
+  }
+
+.header{
+	position: fixed;
+} 
+
+
+
+  .logo1{
+  	overflow: hidden;
+  	z-index: 1;
+  }
+
+  
+
+  
+
+  .navbar{
+  	max-width: 90%;
+  	
+  	right: 2vh;
+  	z-index: 4;
+  }
+
+  logo1 h1{
+  	left: -20%;
+  }
+
+ 
+
+  .dropdown_menu{
+  	display: block;
+  	z-index: 1;
+  	
+  }
+
+  /*sp partie resposive*/
+
+
+  .sp{
+  	overflow: hidden;
+  }
+
+  .sp img{
+  	width: 150vw;
+  	right: -25vw;
+  }
+
+  .sp p{
+  	width: 80vw;
+  }
+
+  .sp h1{
+  	width: 90vw;
+  }
+
+
+}
+
+
+  
+
+ 
+
+  
+
+  
+  
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+@media (max-width: 500px){
+  
+
+  .dropdown_menu{
+  	width: 98vw;
+  	left: 1vw;
+  }
+
+  .logo1 img{
+  	width: 28vw;
+  	height: 28vw;
+  }
+
+  .logo1 h1{
+    letter-spacing: 0px;
+    font-size: 20vw;
+  }
+
+}
+
+@font-face{
+	font-family: Lato;
+}
+
+
+

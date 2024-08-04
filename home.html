@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="home.css">
+	<title></title>
+</head>
+<body>
+
+ <header>
+  	<div class="navbar">
+  		<div class="logo"> <a href="#"> <img src="logo.png"> </a> </div>
+          
+       <ul class="links">
+        	<li> <a href="html.html">Home</a> </li>
+        	<li> <a href="#">About</a> </li>
+        	<li> <a href="#">Services</a> </li>
+        	<li> <a href="#">Contact</a> </li>
+        </ul>
+
+        <div class="toggle_bnt">
+    	<img src="bars.png">
+    </div>
+
+  	</div>
+
+    <div class="dropdown_menu open" style="z-index: 5;">
+    	<li > <a href="html.html">Home</a> </li>
+        	<li> <a href="#">About</a> </li>
+        	<li> <a  href="#">Services</a> </li>
+        	<li> <a href="#">Contact</a> </li>
+    </div>
+
+  </header>
+  <script>
+     	const toggleBnt = document.querySelector('.toggle_bnt')
+ 	const toggleBntIcon = document.querySelector('.toggle_bnt img')
+ 	const dropDownMenu = document.querySelector('.dropdown_menu')
+
+ 	toggleBnt.onclick = function (){dropDownMenu.classList.toggle('open')}
+
+ 
+     </script>
+
+ <div class="top" >
+ 	
+   <div class="bgimges" >
+   	
+    <img src="bg img 2rv3.png" style="z-index: 2;float: right;position: relative;" >
+    <img src="finalbg v2.png" style="z-index:-1;" >
+
+
+   </div>
+
+   <div class="top-logo">
+   	
+   	<div class="h1-box">
+   	<h1 style="" >estelec</h1>
+    </div>
+ 
+    <img src="g.png" style="" >
+    
+   </div>
+   
+   <div class="slogon" >
+   	
+
+   	
+    <h1>
+    	see the life in 
+    </h1>
+  
+    <h1 style="color:#09dd89 ;">
+    	green
+    </h1>
+
+
+   </div>
+
+   <div class="top-txt" style="position: absolute;top: 0;background-color: transparent; height: 100vh;width: 100vw;" >
+    <img src="bg img 2rv3.png" style="z-index: -1;float: right;" >
+   	<h1>Shaping a Sustainable Tomorrow</h1>
+   	
+    <p>At Gestelec, we specialize in providing top-notch electrical services and sustainable green energy solutions. Our mission is to power a greener future through innovative and eco-friendly practices. Join us in making the world a brighter, more sustainable place.</p>
+
+   </div>
+
+ </div>
+
+</body>
+</html>

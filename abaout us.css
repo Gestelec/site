@@ -1,0 +1,387 @@
+body{
+	background-color:#0d130f ;
+	
+	
+}
+
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body {
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif ;
+	background-size: cover;
+	background-position: cover;
+}
+
+
+/*header*/
+
+
+
+li{
+	list-style: none;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 1rem;
+}
+
+header{
+	position: relative;
+	padding: 0 2rem;
+	background-color: transparent;
+}
+
+.navbar {
+	width: 100%;
+	height: 60px;
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+  z-index: 5;
+	position: absolute;
+	justify-content: space-between;
+}
+
+.navbar .logo img{
+    height: 1.5rem;
+
+}
+
+.navbar .links {
+	display: flex;
+	gap: 2rem;
+	cursor: pointer;
+	z-index: 2;
+
+}
+
+
+
+
+.navbar .toggle_bnt img,.toggle_bnt{
+	width: 2rem;
+	height: 1.5rem;
+	cursor: pointer;
+	display: none;
+}
+
+.toggle_bnt,.toggle_bnt img{
+	z-index: 5;
+}
+
+
+/*DROPDOWN MENU*/
+
+
+.dropdown_menu.open {
+	height: 170px;
+}
+
+.dropdown_menu li{
+	padding: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/*top of the web site*/
+
+.top{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+}
+
+.power-line {
+	right: px;
+	position: absolute;
+	
+	
+    
+}
+
+
+
+
+.txt-box{
+	background-color: transparent;
+	
+	
+	
+    border-radius: 20px; 
+	height: 50vh;
+	position: absolute;
+	top: 25vh;
+	color: #fff;
+}
+
+.txt-box h1{
+	position: absolute;
+	width: 50vw;
+    animation-name:txth;
+	animation-duration: 2.5s;
+	left: 5vw;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+.txt-box p{
+	top: 15vh;
+	position: absolute;
+    left: 10vw;
+    width: 50vw;
+    animation-name:txtp;
+	animation-duration: 2.5s;
+	font-size: 30px;
+	font-weight: bold;
+	overflow: hidden;
+}
+
+/*txtbox animation*/
+@keyframes txtp{
+	from {left:-60vw }
+	to {left:10vw }
+}
+
+@keyframes txth{
+	from {left:-60vw }
+	to {left:5vw }
+}
+/*midel */
+
+.midel{
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	background-color: #1f4c37;
+}
+
+.midel img{
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+}
+
+.midel p{
+	position: absolute;
+	width: 40vw;
+	left: 30vw;
+	font-size: 20px;
+	color: #fff;
+	top: 50px;
+}
+
+.midel h1{
+	position: absolute;
+	color: #fff;
+	left: 25vw;
+}
+
+.end{
+	height: 100vh;
+	width: 100vw;
+	position: relative;
+	background-color: #1f4c37;
+	z-index: -2;
+}
+
+.end img{
+	right: 0px;
+	background-color: #1f4c37;
+	position: relative;
+	z-index: -1;
+}
+
+.end p{
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+}
+
+.end h1{
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+}
+
+.float-left {
+  float: right;
+  shape-outside: polygon(8px 33px, 23.52% 23.65%, 79.6% 37.71%, 66.29% 47.6%, 41.81% 32.06%, 15.8% 19.82%);
+  margin: 0px;
+  width: 100vw;
+  
+ height: 100vh;
+}
+
+/*drop dow menu */
+.dropdown_menu{
+	display: none;
+}
+
+@media (min-width:1100px){
+	.mont img{
+		width: 100vw;
+	}
+
+}
+
+/*RESPONSIVE DESIGN OF THE HEADER*/
+@media (max-width: 1100px){
+ 
+/*drop down menu*/
+.dropdown_menu {
+	position: absolute;
+	right: 2rem;
+	top: 60px;
+	width: 300px;
+	background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(15px);
+	overflow: hidden;
+	border-radius: 10px;
+	height: 0;
+	display: none;
+}
+
+
+/*top of the web sit*/
+
+.top{
+	overflow: hidden;
+}
+
+.mont img{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: -37.5vw;
+	width: 150vw;
+	overflow: hidden;
+}
+
+.txt-box p{
+	width: 90vw;
+	font-size:20px ;
+    left: 5vw;
+    animation-name:txtp;
+	animation-duration: 2.5s;
+}
+
+@keyframes txtp{
+	from {left:-60vw }
+	to {left:5vw }
+}
+
+@keyframes txth{
+	from {left:-60vw }
+	to {left:10vw }
+}
+
+.txt-box h1{
+	width: 80vw;
+	left: 10vw;
+}
+
+.header{
+	/*position: fixed;*/
+} 
+
+.sloguan2{
+	left: 4px;
+	letter-spacing: -2px;
+}
+
+
+  .logo1{
+  	left: 25%;
+  }
+
+  .navbar .links{
+  	display: none;
+  }
+
+  .navbar .toggle_bnt img,.toggle_bnt {
+  	z-index: 5;
+  	display: block;
+  	
+  }
+
+  .navbar{
+  	max-width: 90%;
+  	/*position: fixed;*/
+  	right: 2vh;
+  	z-index: 1;
+  }
+
+  .logo1 h1{
+  	left: -20%;
+  }
+
+  .logo1{
+  	left: -10%;
+  }
+
+  .dropdown_menu{
+  	display: block;
+  	z-index: 1;
+  	/*position: fixed;*/
+  }
+
+  /*midel of the web sit*/
+
+  .midel{
+  	overflow: hidden;
+  }
+
+  .midel p{
+  	width: 90vw;
+	font-size:20px ;
+    left: 5vw;
+    overflow: hidden;
+    top: 70px;
+  }
+
+  .midel h1{
+  	width: 95vw;
+  	left: 2.5vw;
+  }
+
+  .midel img{
+  	width: 150vw;
+  	left: -37.5vw;
+  }
+
+  /*the end of the web site*/
+
+  .end{
+  	overflow: hidden;
+  }
+
+  .end img{
+  	width: 150vw;
+  	left: 50vw;
+  }
+
+  .end img{
+    float: right;
+  shape-outside: polygon(53px -3px, 49.84% 9.04%, 64.65% 13.68%, 60.47% 25.85%, 43.93% 0.57%, 19.9% 6.18%);
+  }
+
+}
+
+
+@media (max-width:500px){
+.dropdown_menu{
+  	width: 98vw;
+    left: 1vw;
+  }
+}
